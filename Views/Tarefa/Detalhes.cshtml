@@ -1,0 +1,38 @@
+@model DesafioMVC.Models.Tarefa
+
+@{
+    ViewData["Title"] = "Detalhes da tarefa";
+}
+
+<h1>Detalhes</h1>
+
+<div>
+    <d1 class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(x => x.Titulo)
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.Titulo)
+        </dt>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(x => x.Descricao)
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.Descricao)
+        </dt>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(x => x.Data)"
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.Data)
+        </dt>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(x => x.Status)
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.Status)
+        </dt>
+      </d1>
+</div>
+<a asp-action="Editar" asp-route-id="@Model.Id">Editar</a>
+<a asp-action="Index">Voltar</a>

@@ -1,0 +1,44 @@
+@model DesafioMVC.Models.Tarefa
+
+@{
+    ViewData["Title"] = "Editar tarefa";
+}
+<h1>Editar tarefa</h1>
+
+<hr/>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Editar">
+            <div class="form-group">
+                <label asp-for="Titulo" class="control-label"></label>
+                <input asp-for="Titulo" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Descricao" class="control-label"></label>
+                <input asp-for="Descricao" class="form-control" />
+             </div>
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <select asp-for="Status" class="form-control">
+                    <option value="Pendente" selected>Pendente</option>
+                    <option value="Finalizado">Finalizado</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Data" class="control-label"></label>
+                <input asp-for="Data" class="form-control" />
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="submit" value="Editar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<br>
+
+<div>
+    <a asp-action="Index">Voltar</a>
+</div>

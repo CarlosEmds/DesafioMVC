@@ -1,0 +1,42 @@
+@model DesafioMVC.Models.Tarefa
+
+@{
+    ViewData["Title"] = "Deletar tarefa";
+}
+
+<h1 style="color: red;">Deseja realmente deletar essa tarefa? Essa opreacao é irreversivel</h1>
+
+<div>
+    <d1 class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(x => x.Titulo)
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.Titulo)
+        </dt>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(x => x.Descricao)
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.Descricao)
+        </dt>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(x => x.Data)
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.Data)
+        </dt>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(x => x.Status)
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.Status)
+        </dt>
+    </d1>
+</div>
+<form asp-action="Deletar">
+    <input type="submit" value="Deletar" class="btn btn-danger"/>
+</form>
+
+<br>
+<a asp-action="Index">Voltar</a>

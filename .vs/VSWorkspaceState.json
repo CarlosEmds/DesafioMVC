@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Context",
+    "\\Controllers",
+    "\\Models",
+    "\\Views",
+    "\\Views\\Home",
+    "\\Views\\Shared",
+    "\\Views\\Tarefa"
+  ],
+  "SelectedNode": "\\Controllers\\TarefaController.cs",
+  "PreviewInSolutionExplorer": false
+}
